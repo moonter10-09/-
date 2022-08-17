@@ -1,0 +1,8 @@
+<!--pages/detail-video/index.wxml-->
+<view class="main">
+  <video class="video" src="{{mvUrlInfo.url}}"
+    autoplay="true"
+    loop="true"
+    show-mute-btn="true"
+    ></video>
+</view>
