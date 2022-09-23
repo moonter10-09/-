@@ -1,17 +1,17 @@
 <!--pages/home-music/index.wxml-->
 <view>
-  <van-search disabled value="{{ value }}" placeholder="搜索你喜欢的歌曲" background="#fafafa" shape="round" bindtap="handleSearchClick"/>
-  <swiper  indicator-dots circular autoplay>
+  <van-search disabled value="{{ value }}" placeholder="搜索你喜欢的歌曲" background="#fafafa" shape="round" bindtap="handleSearchClick" />
+  <swiper indicator-dots circular autoplay 	indicator-active-color='#ffff' class="swiper" style="height: {{swiperHeight}}px;">
+    <block wx:for="{{bannerList}}" wx:key="bannerId">
 
-<block wx:for="{{swiperImages}}">
+      <swiper-item class="swiper-item">
+        <image  class="swiper-img" 
+                src="{{item.pic}}" 
+                mode="widthFix"
+                bindload="handleSwiperImageLoaded"
+                ></image>
+      </swiper-item>
+    </block>
 
-    <swiper-item>
-
-    <image src="{{item}}"></image>
-
-    </swiper-item>
-
-</block>
-
-</swiper>
+  </swiper>
 </view>

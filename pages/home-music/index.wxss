@@ -2,3 +2,23 @@
 .van-search__content{
   background-color:#ffff !important;
 }
+page{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.van-search{
+  padding: 20rpx 0 !important;
+}
+.swiper{
+  margin-left: 30rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  transform: translateY(0);
+}
+.swiper-item{
+  display: flex;
+
+}
+.swiper-item .swiper-img{
+  width: 100%;
+}

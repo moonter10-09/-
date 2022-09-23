@@ -5,6 +5,7 @@
     loop="true"
     show-mute-btn="true"
     danmu-list="{{danmuList}}"
+    referrer-policy="origin"
     ></video>
 </view>
 <!-- wx:if="{{item.urgent=='1'}}  wx:if="{{item.transferflag=='1'}}"-->
